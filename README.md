@@ -17,6 +17,8 @@ kubectl create -f release.yaml
 
 [Mirror of source-to-url-go](https://github.com/knative/docs/tree/master/serving/samples/source-to-url-go)
 
+### Deploy Application
+
 ```
 apiVersion: v1
 kind: Secret
@@ -90,4 +92,27 @@ spec:
             env:
             - name: SIMPLE_MSG
               value: "Hello sample app!"
+```
+
+### Visit Application
+
+```
+kubectl get service.serving.knative.dev app-from-source -o yaml
+```
+
+
+```
+kubectl get svc knative-ingressgateway -n istio-system
+NAME                     TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)                                      AGE
+knative-ingressgateway   LoadBalancer   172.19.9.80   47.95.183.249   80:32380/TCP,443:32390/TCP,32400:32400/TCP   16h
+```
+
+```
+kubectl get services.serving.knative.dev app-from-source  -o=custom-columns=NAME:.metadata.name,DOMAIN:.status.domain
+NAME              DOMAIN
+app-from-source   app-from-source.default.example.com
+```
+
+```
+curl -H "Host: app-from-source.default.example.com" http://47.95.183.249
 ```
