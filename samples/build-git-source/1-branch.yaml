@@ -1,0 +1,18 @@
+apiVersion: build.knative.dev/v1alpha1
+kind: Build
+metadata:
+  name: test-git-branch
+  labels:
+    expect: succeeded
+spec:
+  source:
+    git:
+      url: https://github.com/bazelbuild/rules_docker
+      revision: master
+  template:
+    name: dump-workspace-template
+  steps:
+  - name: default-termination-path
+    image: ubuntu
+    command: ["/bin/bash"]
+    args: ["-c", "echo this is my status > /dev/termination-log"]

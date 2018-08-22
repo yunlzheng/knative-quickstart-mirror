@@ -1,0 +1,12 @@
+apiVersion: build.knative.dev/v1alpha1
+kind: BuildTemplate
+metadata:
+  name: dump-workspace-template
+spec:
+  steps:
+  - name: dump-workspace
+    image: ubuntu:latest
+    args: ["cat", "WORKSPACE"]
+  - name: dump-readme
+    image: ubuntu:latest
+    args: ["echo", "hello"]

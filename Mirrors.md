@@ -19,6 +19,13 @@
 | registry.cn-hangzhou.aliyuncs.com/knative-releases/autoscaler:v0.1.0| gcr.io/knative-releases/github.com/knative/serving/cmd/autoscaler@sha256:fd92d915b4e275c0c28e05ad812d6d5c0159339a1b380a7acb79d9cd0244de15 |
 | registry.cn-hangzhou.aliyuncs.com/knative-releases/queue:v0.1.0 | gcr.io/knative-releases/github.com/knative/serving/cmd/queue@sha256:90a46fd308cd21ee292bd3159bf84c75d0bb1dc4539fd61b814a3ebd8b74db4b |
 
+### Istio
+
+| mirror | source |
+|--------|--------|
+| registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/hyperkube:v1.7.6_coreos.0 |   quay.io/coreos/hyperkube:v1.7.6_coreos.0 |
+| registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/pilot:0.8.0 | docker.io/istio/pilot:0.8.0 |
+
 ### Others
 
 |  mirror   |   source  |
@@ -27,3 +34,5 @@
 |registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/fluentd-elasticsearch:v2.0.4| k8s.gcr.io/fluentd-elasticsearch:v2.0.4 |
 |registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/addon-resizer:1.7| k8s.gcr.io/addon-resizer:1.7 |
 |registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/elasticsearch:v5.6.4| k8s.gcr.io/elasticsearch:v5.6.4 |
+|registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/helloworld-go| gcr.io/knative-samples/helloworld-go |
+|registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/cloud-builders-docker | gcr.io/cloud-builders/docker |

@@ -895,7 +895,7 @@ spec:
       serviceAccountName: istio-mixer-post-install-account
       containers:
         - name: hyperkube
-          image: "quay.io/coreos/hyperkube:v1.7.6_coreos.0"
+          image: "registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/hyperkube:v1.7.6_coreos.0"
           command:
             - ./kubectl
             - apply
@@ -2824,7 +2824,7 @@ spec:
       serviceAccountName: istio-pilot-service-account
       containers:
         - name: discovery
-          image: "docker.io/istio/pilot:0.8.0"
+          image: "registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/pilot:0.8.0"
           imagePullPolicy: IfNotPresent
           args:
           - "discovery"
@@ -3151,7 +3151,7 @@ spec:
       serviceAccountName: istio-cleanup-old-ca-service-account
       containers:
         - name: hyperkube
-          image: "quay.io/coreos/hyperkube:v1.7.6_coreos.0"
+          image: "registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/hyperkube:v1.7.6_coreos.0"
           command:
           - /bin/bash
           - -c

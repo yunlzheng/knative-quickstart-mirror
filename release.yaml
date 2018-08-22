@@ -835,7 +835,7 @@ data:
   max-scale-up-rate: "10"
   multi-concurrency-target: "1.0"
   panic-window: 6s
-  scale-to-zero-threshold: 5m
+  scale-to-zero-threshold: 1m
   single-concurrency-target: "0.9"
   stable-window: 60s
   vpa-multi-concurrency-target: "10.0"

@@ -16,7 +16,7 @@ spec:
           name: kaniko
           arguments:
           - name: IMAGE
-            value: &image docker.io/{USERNAME}/app-from-source
+            value: &image docker.io/yunlzheng/app-from-source
       revisionTemplate:
         spec:
           container:
