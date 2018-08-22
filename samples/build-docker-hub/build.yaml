@@ -5,13 +5,14 @@ metadata:
   labels:
     expect: succeeded
 spec:
-  serviceAccountName: build-bot
+  serviceAccountName: build-bot-1
   source:
     git:
       url: https://github.com/yunlzheng/simple-app.git
       revision: master
-  template:
-    name: kaniko
-    arguments:
-    - name: IMAGE
-      value: docker.io/yunlzheng/app-from-source
+  steps:
+  - name: build-and-push
+    image: registry.cn-hangzhou.aliyuncs.com/kaniko-project/executor
+    args:
+    - --dockerfile=/workspace/Dockerfile
+    - --destination=docker.io/yunlzheng/app-from-source
