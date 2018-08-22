@@ -1,0 +1,18 @@
+apiVersion: flows.knative.dev/v1alpha1
+kind: Flow
+metadata:
+  name: k8s-event-flow
+  namespace: default
+spec:
+  serviceAccountName: feed-sa
+  trigger:
+    eventType: dev.knative.k8s.event
+    resource: k8sevents/dev.knative.k8s.event
+    service: k8sevents
+    parameters:
+      namespace: default
+  action:
+    target:
+      kind: Route
+      apiVersion: serving.knative.dev/v1alpha1
+      name: read-k8s-events

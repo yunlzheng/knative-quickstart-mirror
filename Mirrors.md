@@ -19,6 +19,16 @@
 | registry.cn-hangzhou.aliyuncs.com/knative-releases/autoscaler:v0.1.0| gcr.io/knative-releases/github.com/knative/serving/cmd/autoscaler@sha256:fd92d915b4e275c0c28e05ad812d6d5c0159339a1b380a7acb79d9cd0244de15 |
 | registry.cn-hangzhou.aliyuncs.com/knative-releases/queue:v0.1.0 | gcr.io/knative-releases/github.com/knative/serving/cmd/queue@sha256:90a46fd308cd21ee292bd3159bf84c75d0bb1dc4539fd61b814a3ebd8b74db4b |
 
+### Eventing
+
+| mirror | source |
+|--------|--------|
+|   registry.cn-hangzhou.aliyuncs.com/knative-releases/eventing-buses-stub:v0.1.0     |   gcr.io/knative-releases/github.com/knative/eventing/pkg/buses/stub@sha256:69097e75810496684dfb01949381b5f3d31e0b6a8f7da7a28217456a53c4fa32 |
+|   registry.cn-hangzhou.aliyuncs.com/knative-releases/eventing-k8sevents:v1.0.1 | gcr.io/knative-releases/github.com/knative/eventing/pkg/sources/k8sevents@sha256:2e5f9aa9c0825a7e72436a3169ffb4becab16600e1319487b4ed76a992364649 |
+|   registry.cn-hangzhou.aliyuncs.com/knative-releases/eventing-receive_adapter:v0.1.0 | gcr.io/knative-releases/github.com/knative/eventing/pkg/sources/k8sevents/receive_adapter@sha256:a310f738488222f0abcec1880ad2d203d68270680e49b1b8228f2242d86c225d|
+|  registry.cn-hangzhou.aliyuncs.com/knative-releases/eventing-controller:v0.1.0 |  gcr.io/knative-releases/github.com/knative/eventing/cmd/controller@sha256:36b930ac02e6737e3542646b09e7967ba3e28182c88ade793915663940861289 |
+|  registry.cn-hangzhou.aliyuncs.com/knative-releases/eventing-webhook:v0.1.0 |  gcr.io/knative-releases/github.com/knative/eventing/cmd/webhook@sha256:4c2ff8751ac59d0c185f79d2984d264c73611f9ff66836857ee1a61ec14e53ec|
+
 ### Istio
 
 | mirror | source |
@@ -26,7 +36,8 @@
 | registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/hyperkube:v1.7.6_coreos.0 |   quay.io/coreos/hyperkube:v1.7.6_coreos.0 |
 | registry.cn-hangzhou.aliyuncs.com/k8s-mirrors/pilot:0.8.0 | docker.io/istio/pilot:0.8.0 |
 
-### Others
+
+### Othersls
 
 |  mirror   |   source  |
 |--------|-----------|

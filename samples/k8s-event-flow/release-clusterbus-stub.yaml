@@ -1,4 +1,3 @@
----
 apiVersion: channels.knative.dev/v1alpha1
 kind: ClusterBus
 metadata:
