@@ -5,6 +5,8 @@ Inside the wall
 
 ## Install Knative
 
+> Docker Image Mirror see [Mirrors.md](./Mirrors.md)
+
 ```
 kubectl create -f istio.yaml
 ```
